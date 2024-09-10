@@ -53,7 +53,7 @@ Sepolia <-> Arbitrum Sepolia
 - In onft.js, comment line `await configureItGlobally(flashInstance);`.
 - Then uncomment: `await sendFlash(flashInstance, TOKEN_ID_TO_BE_SENT);`.
 - In onft.js, change line: `const TOKEN_ID_TO_BE_SENT = 0;` with the token ID you want to send.
-- change it to 1 instead of 1 as i tested on zero.
+- change it to 1 instead of 0 as i tested on zero.
 - Make sure the token ID you configured exists on the local chain (has been minted).
 - Save and run:
     + To send ONFT from Sepolia -> ARB Sepolia: `npx hardhat run scripts/onft.js --network sepolia`
